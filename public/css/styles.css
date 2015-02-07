@@ -1,3 +1,88 @@
+/* Style sheet for Flappy app 2015 Devleague */
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/* Generic Styles */
+html {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background: #fff;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+section {
+  display: block;
+  padding: ;
+}
+
+/* Layout */ 
+
+/* Header */
+header, footer {
+  background: #25262C;
+  background-image: url(../images/border.png);
+  background-repeat: repeat-x;
+  background-position: center
+}
+
+.logo {
+  float: left;
+}
+
+/* Nav */
+nav{
+  float: right;
+}
+
+/* Content */
+.hero {
+  width: 70%;
+  height: 265px;
+  background-image: url(../images/scenery.png);
+  border: 3px solid #25262C;
+}
+
+/* Footer */
+/*.first_foot, .second_foot, .third_foot{
+  float: left;
+}*/
+.foot_menu{
+  float: left;
+}
+
+
+/* Global Styles / Themes */
+
+
+/* Media Queries */
+/* Small Only */
+@media only screen and (max-width: 40em){
+  
+}
+
+/* Medium Only */ 
+@media only screen and (min-width: 40.063em) and (max-width: 60em){
+  
+}
+
+/* Large Only */
+@media only screen and (min-width: 60.063em){
+
+  /* Footer */
+  .copy {
+   background: #1ACAC8; 
+  }
+
+}
+
 /*colors
 dark blue:
 #25262C  
@@ -10,11 +95,3 @@ white:
 
 "grey":
 #E2E2E2  */
-
-.clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
