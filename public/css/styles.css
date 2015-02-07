@@ -1,0 +1,20 @@
+/*colors
+dark blue:
+#25262C  
+
+teal:
+#1ACAC8  
+
+white:
+#FFFFFF  
+
+"grey":
+#E2E2E2  */
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
