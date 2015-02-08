@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Responsive Flappy App</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>
 <body>
-  <header class="clearfix">
-    <div class="logo">
-      <img src="http://placekitten.com/g/50/50" alt="Flappy App Logo">
-      <h1>Flappy <span class="white">App</span></h1>
-    </div><!-- ends logos -->
-    <nav>
-      <ul>
-        <li><a href="#">about</a></li>
-        <li class="top_nav active"><a href="#">specs</a></li>
-        <li><a href="#">pricing</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#">sign up</a></li>
-      </ul>
-    </nav><!-- ends nav --> 
+  <header>
+    <section class="row clearfix">
+      <div class="logo clearfix">
+        <img src="images/logo.png" alt="Flappy App Logo">
+        <h1>Flappy <span class="white">App</span></h1>
+      </div><!-- ends logos -->
+      <nav>
+        <ul>
+          <li><a href="#">about</a></li>
+          <li class="top_nav active"><a href="#">specs</a></li>
+          <li><a href="#">pricing</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">sign up</a></li>
+        </ul>
+      </nav><!-- ends nav -->
+      <div class="border-menu"></div>
+    </section> 
   </header><!-- ends header -->
   <div class="content">
     <section class="row clearfix">
@@ -48,7 +52,7 @@
   </div><!-- end of main content div -->
   <footer>
     <section class="row clearfix">
-      <div class="foot_menu">
+      <div class="foot_menu first">
         <ul class="foot_ul">
           <li><a href="#">about</a></li>
           <li><a href="#">specs</a></li>
@@ -57,7 +61,7 @@
           <li><a href="#">sign up</a></li>
         </ul>
       </div><!-- end of first footer div -->
-      <div class="foot_menu">
+      <div class="foot_menu second">
         <ul class="foot_ul">
           <li><a href="#">commercial licenses</a></li>
           <li class="active"><a href="#">education</a></li>
@@ -66,7 +70,7 @@
           <li><a href="#">documentation</a></li>
         </ul>
       </div><!-- end of first footer div -->
-      <div class="foot_menu">
+      <div class="foot_menu third">
         <ul class="foot_ul">
           <li><a href="#">tutorials</a></li>
           <li><a href="#">events</a></li>
