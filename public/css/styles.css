@@ -1,10 +1,9 @@
 /* Style sheet for Flappy app 2015 Devleague */
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
-/* Generic Styles */
+/* --- Generic Styles --- */
 html {
   font-size: 16px;
-  text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   width: 100%;
   background: #fff;
@@ -23,56 +22,44 @@ section {
   display: block;
 }
 
-/* Layout */ 
+/* --- Layout --- */ 
 
 /* Header */
-header, footer {
-  background: #25262C;
-  background-image: url(../images/border.png);
-  background-repeat: repeat-x;
-  background-position: top;
+header {
+  height: 150px;
 }
 
 .logo {
   float: left;
 }
 
-.logo h1 .white{
-  color: #fff;
+.logo{
+    padding: 15px 10px;
 }
 
-header {
-  height: 150px;
+.logo img{
+  float: left;
 }
+
+.logo h1{
+  float: left;
+  color:#1ACAC8;
+  font-size: 1.5em;
+  margin-left: 8px;
+}
+
 
 /* Nav */
 nav{
   float: right;
 }
 
-nav ul{
-  padding: 10px 15px;
-  border-bottom: 4px solid #1ACAC8;
-}
-
 nav ul li {
   display: inline;
-  padding: 17px 15px;
-  line-height: 2;
+  padding: 15px;
+  line-height: 3;
 }
 
-nav ul li.active {
-  border-bottom: 4px solid #fff;
-}
-
-.active a {
-  color: #fff;
-}
-
-
-/*.border-menu{
-  display: none;
-  }*/
 
 /* Content */
 
@@ -80,18 +67,14 @@ nav ul li.active {
   width: 100%;
   height: 250px;
   background-image: url(../images/scenery.png);
+  background-position: right center;
 }
 
 aside.features {
   background: #1ACAC8;
   width: 100%;
-  height: 330px;
+  height: 320px;
   text-align: center;
-  -webkit-webkit-box-shadow: 0 3px 30px -8px black;
-    -moz-webkit-box-shadow: 0 3px 30px -8px black;
-    -ms-webkit-box-shadow: 0 3px 30px -8px black;
-    -o-webkit-box-shadow: 0 3px 30px -8px black;
-    box-shadow: 0 3px 30px -8px black;
 }
 
 .features ul{
@@ -100,8 +83,8 @@ aside.features {
 
 .features ul li{
   width: 100%;
-  height: 45px;
-  /*font-size: 1.2em;*/
+  height: 40px;
+  font-size: 1.2em;
   /*margin-bottom: 20px;*/
   padding-top: 20px;
 }
@@ -110,178 +93,183 @@ aside.features {
   background: #25262C;
   color: #1ACAC8;
 }
-.features ul li:nth-child(2),.features ul li:nth-child(3),.features ul li:nth-child(4)  {
-  border-bottom: 1px solid #13918E;
-}
 
-.number{
-  color: #fff;
+.features ul li:nth-child(2), 
+.features ul li:nth-child(3), 
+.features ul li:nth-child(4) {
+  border-bottom: 1px solid #13918E;
 }
 
 .description {
   padding: 40px;
   font-size: 1.5em;
-  text-transform: lowercase;
   line-height: 1.5;
-}
-
-article.description p::first-letter{
-  text-transform: uppercase;
 }
 
 /* Footer */
 
-.foot_menu{
+.first, .second{
   float: left;
 }
+.third {
+    float: right;
+  }
 
 footer {
-  height: 250px;
-  padding: 40px;
+  height: 350px;
+}
+
+footer section {
+  padding: 30px 45px 15px;
+}
+
+footer section ul {
+  font-size: 1.25em;
+  line-height: 2;
 }
 
 .copy {
   text-align: center;
+  padding-right: 30px;
 }
 
 /* Global Styles / Themes */
-a {
+header, footer {
+  background: #25262C;
+  background-image: url(../images/border.png);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+a{
   text-decoration: none;
   color: #1ACAC8;
 }
 
-/* Media Queries */
-/* Small Only */
-@media only screen and (max-width: 40em){
-  header {
-  height: 90px;
+.active a, 
+.copy, 
+.number, 
+.white {
+  color: #fff;
 }
 
+header, 
+.features,
+footer{
+  text-transform: uppercase;
+} 
+
+/* --- Media Queries --- */
+/* Small Only */
+/* 640px & below */
+@media only screen and (max-width: 40em){
+  .second {
+    display: none;
+  }
+}
+
+/* 772px & below */
+@media only screen and (max-width: 48.310em){
+  header {
+    height: 80px;
+  }
   nav {
     display: none;
   }
-
   .border-menu{
     position: relative;
     top: 20px;
-    padding-left: 85px;
+    padding-left: 10px;
     float: right;
-    margin: 15px 0;
+    margin: 10px 50px;
   }
-
   .border-menu:before{
     content: "";
     position: absolute;
     left: 0;
-    top: 0.25em;
-    width: 35px;
-    height: 0.30em;
-    background: #1ACAC8 ;
+    top: 0;
+    width: 30px;
+    height: 5px;
+    background: #1ACAC8;
     box-shadow: 
-    0 20px 0 0 #1ACAC8 ,
-    0 10px 0 0 #1ACAC8 ;
+      0 20px 0 0 #1ACAC8,
+      0 10px 0 0 #1ACAC8;
   }
-  
   .logo{
-    width: 280px;
-    padding: 20px;
+    width: 300px;
   }
-
   .logo img{
-    float: left;
-    width: 35%;
+    width: 30%;
   }
-
-  .logo h1{
-    float: left;
-    color:#1ACAC8;
-    font-size: 1.5em;
-    padding: 20px 0 0 10px;
+  .logo h1 {
+    line-height: 2.5;
   }
-  
-  .hero{
-    background-position: right center;
+  .first, .third{
+    width: 27%;
   }
-
   .second{
-    display: none;
-  }
-
-  .third {
-    float: right;
-  }
-
-  .foot_menu{
     width: 40%;
-    line-height: 2em;
-    font-size: 1.15em;
-  }
-
-  .foot_menu a {
-    color: #1ACAC8;
-  }
-
-  .copy{
-    color: #fff;
-    padding: 30px 68px 0 0;
-    
   }
 }
 
-/* Medium Only */ 
-@media only screen and (min-width: 40.063em) and (max-width: 60em){
+/* Medium Only */
+/* 773px - 1100.8px*/ 
+@media only screen and (min-width: 48.320em) and (max-width: 68.80em){
+  header section{
+    padding: 35px 20px;
+  }
+  nav ul{
+    padding: 20px 15px;
+  } 
+  .logo{
+    width: 200px;
+  }
+  .logo img{
+    width: 45%;
+  }
+  .logo h1{
+    width: 95px;
+  }
+  .first, .third{
+    width: 30%;
+  }
+  .second{
+    width: 40%;
+  }
 
 }
 
 /* Large Only */
-@media only screen and (min-width: 60.063em){
+/* > 1100px */
+@media only screen and (min-width: 68.81em){
   section {
-  max-width: 1100px;
   padding: 30px 60px;
-  margin: auto;
   }
-
+  nav ul{
+  border-bottom: 4px solid #1ACAC8;
+  }
+  nav ul li.active {
+    border-bottom: 4px solid #fff;
+  }
   .content section:first-child{
   padding-top: 40px;
   /*padding-bottom: 30px;*/
   }
-
   .hero {
   width: 65%;
   height: 265px;
   border: 3px solid #25262C;
   float: left;
   }
-  
   aside.features {
   float: left;
   width: 29%;
   margin: 2px 10px 2px 40px;
-  height: 265px;
   }
-
-  .features ul li{
-    height: 35px;
-    padding-top: 16px;
-  }
-
-  .content section:nth-child(2){
-    padding: 15px 60px 30px; 
-  }
-
-  .description{
-    padding: 0 60px 0 0;
-    text-align: left;
-  }
-
   /* Footer */
   .copy {
-   background: #1ACAC8;
-   color: #25262C;
-   padding: 12px 0; 
+   background: #1ACAC8; 
   }
-
-  }
+}
 
 /*colors
 dark blue:
@@ -294,4 +282,10 @@ white:
 #FFFFFF  
 
 "grey":
-#E2E2E2  */
+#E2E2E2  
+
+/*notes
+
+box-sizing: border-box;
+
+*/
