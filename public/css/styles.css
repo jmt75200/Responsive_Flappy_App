@@ -242,7 +242,7 @@ footer{
 /* > 1100px */
 @media only screen and (min-width: 68.81em){
   section {
-  padding: 30px 60px;
+    padding: 0 30px;
   }
   nav ul{
   border-bottom: 4px solid #1ACAC8;
@@ -252,18 +252,27 @@ footer{
   }
   .content section:first-child{
   padding-top: 40px;
-  /*padding-bottom: 30px;*/
   }
   .hero {
-  width: 65%;
-  height: 265px;
-  border: 3px solid #25262C;
-  float: left;
+    width: 65%;
+    height: 265px;
+    border: 3px solid #25262C;
+    float: left;
   }
   aside.features {
-  float: left;
-  width: 29%;
-  margin: 2px 10px 2px 40px;
+    float: left;
+    width: 29%;
+    margin: 2px 10px 2px 35px;
+    height: 265px;
+  }
+  aside.features li{
+    font-size: 1em;
+    height: 35px;
+    line-height: 1.2em;
+    padding-top: 17px;
+  }
+  .content section:nth-child(2){
+    padding: 0 60px;
   }
   /* Footer */
   .copy {
