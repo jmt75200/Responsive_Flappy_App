@@ -241,6 +241,13 @@ footer{
   }
 
 }
+@media only screen and (max-width: 1200px){
+  .description{
+  -webkit-box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+  }
+}
 
 /* Large Only */
 /* > 1100px */
@@ -279,9 +286,9 @@ footer{
     border-bottom: 4px solid #fff;
   }
   .content{
-    -webkit-box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 2px 36px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 2px 36px -7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 2px 36px -7px rgba(0,0,0,0.75);
   }
   .content section:first-child{
     padding-top: 40px;
