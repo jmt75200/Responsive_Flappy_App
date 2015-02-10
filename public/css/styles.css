@@ -8,6 +8,7 @@ html {
   width: 100%;
   background: #fff;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .clearfix:after {
@@ -20,6 +21,7 @@ html {
 
 section {
   display: block;
+  margin: auto;
 }
 
 /* --- Layout --- */ 
@@ -39,6 +41,7 @@ header {
 
 .logo img{
   float: left;
+  /*background: url(images/logo.png);*/
 }
 
 .logo h1{
@@ -104,6 +107,7 @@ aside.features {
   padding: 40px;
   font-size: 1.5em;
   line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 /* Footer */
@@ -168,7 +172,7 @@ footer{
 }
 
 /* 772px & below */
-@media only screen and (max-width: 48.310em){
+@media only screen and (max-width: 841px){
   header {
     height: 80px;
   }
@@ -213,7 +217,7 @@ footer{
 
 /* Medium Only */
 /* 773px - 1100.8px*/ 
-@media only screen and (min-width: 48.320em) and (max-width: 68.80em){
+@media only screen and (min-width: 842px) and (max-width: 1199px){
   header section{
     padding: 35px 20px;
   }
@@ -240,30 +244,65 @@ footer{
 
 /* Large Only */
 /* > 1100px */
-@media only screen and (min-width: 68.81em){
+@media only screen and (min-width: 1200px){
   section {
     padding: 0 30px;
+    max-width: 1100px;
+  }
+  header section{
+    padding-top: 30px;
+  }
+  .logo{
+    width: 400px;
+    padding: 5px 10px;
+  }
+  .logo img{
+    position: absolute;
+    z-index: 2;
+    padding-left: 250px;
+    top: 25px;
+  }
+  .white {
+    color: #1ACAC8;
+    padding-left: 50px;
+  }
+  .logo h1{
+    font-size: 3.5em;
+    letter-spacing: 10px;
+    position: absolute;
+    z-index: 1;
   }
   nav ul{
-  border-bottom: 4px solid #1ACAC8;
+    border-bottom: 4px solid #1ACAC8;
   }
   nav ul li.active {
     border-bottom: 4px solid #fff;
   }
+  .content{
+    -webkit-box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 4px 31px -7px rgba(0,0,0,0.75);
+  }
   .content section:first-child{
-  padding-top: 40px;
+    padding-top: 40px;
   }
   .hero {
     width: 65%;
     height: 265px;
     border: 3px solid #25262C;
     float: left;
+    -webkit-box-shadow: -1px -3px 27px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -3px 27px -7px rgba(0,0,0,0.75);
+    box-shadow: -1px -3px 27px -7px rgba(0,0,0,0.75);
   }
   aside.features {
     float: left;
     width: 29%;
     margin: 2px 10px 2px 35px;
     height: 265px;
+    -webkit-box-shadow: -2px 1px 46px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 1px 46px -8px rgba(0,0,0,0.75);
+    box-shadow: -2px 1px 46px -8px rgba(0,0,0,0.75);
   }
   aside.features li{
     font-size: 1em;
@@ -271,12 +310,24 @@ footer{
     line-height: 1.2em;
     padding-top: 17px;
   }
-  .content section:nth-child(2){
-    padding: 0 60px;
+  .description{
+    padding: 20px 40px 40px 0;
   }
   /* Footer */
   .copy {
-   background: #1ACAC8; 
+   background: #1ACAC8;
+   padding: 15px 0;
+   color: #25262C; 
+  }
+  .foot_menu{
+    width: 30%;
+    border-left: 4px solid #1ACAC8;
+  }
+  .foot_ul{
+    padding-left: 30px;
+  }
+  .foot_ul li a{
+    font-size: .89em;
   }
 }
 
