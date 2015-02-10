@@ -279,7 +279,7 @@ footer{
     position: absolute;
     z-index: 1;
   }
-  nav ul{
+  nav{
     border-bottom: 4px solid #1ACAC8;
   }
   nav ul li.active {
